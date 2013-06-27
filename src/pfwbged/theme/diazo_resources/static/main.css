@@ -1,0 +1,280 @@
+/* Stylesheet for the 'ICustomTheme' Plone browser layer */
+
+div#portal-top {
+	background-color: #3e5975;
+	margin: 0.5%;
+	border-radius: 1ex;
+	width: 99%;
+	box-shadow: 2px 2px 2px 0px #999;
+	position: relative;
+}
+
+div#portal-top h1 {
+	color: white;
+	margin-bottom: 1em;
+	margin-left: 1ex;
+	font-weight: normal;
+}
+
+ul#portal-globalnav {
+	background: transparent;
+}
+
+ul#portal-globalnav li.plain a {
+	background: #f9a71f;
+}
+
+div#portal-searchbox {
+	position: absolute;
+	right: 10px;
+	bottom: -10px;
+}
+
+div#portal-searchbox label {
+	color: white;
+}
+
+div#portal-searchbox input.searchButton {
+	display: none;
+}
+
+div#portal-footer-wrapper {
+	display: none;
+}
+
+div#portal-body {
+	clear: both;
+	background: #a2b2b4;
+	margin: 0.5%;
+	border-radius: 1ex;
+	width: 99%;
+	box-shadow: 2px 2px 2px 0px #999;
+	position: relative;
+}
+
+div#portal-columns #portal-breadcrumbs {
+	display: none;
+}
+
+div#portal-columns {
+	background: white;
+	margin: 0.5%;
+	width: 99%;
+}
+
+div.position-0 {
+	margin-left: -100%;
+}
+
+div#portal-columns .documentFirstHeading {
+	display: none;
+}
+
+#portal-body-top {
+	padding-left: 1em;
+}
+
+div.width-full {
+	width: 100%;
+}
+
+div.width-3\3a 4 {
+	width: 100%;
+}
+
+div#edit-bar {
+	border-radius: 0;
+}
+
+#portal-personaltools {
+	border-radius: 5px;
+}
+
+#content p.table-bottom a {
+	display: inline-block;
+	width: 16px;
+	text-indent: -11110px;
+	text-decoration: none;
+	border: 0;
+}
+
+a.first { background: url(go-first-symbolic.png) top left; }
+a.last { background: url(go-last-symbolic.png) top left; }
+a.next { background: url(go-next-symbolic.png) top left; }
+a.prev { background: url(go-previous-symbolic.png) top left; }
+
+div.table {
+	border: 1px solid black;
+	width: 98%;
+}
+
+#content div.table p {
+	margin: 0 0;
+	padding: 5px 1ex;
+	background: #3e5975;
+	color: white;
+}
+
+div.table table {
+	width: 100%;
+}
+
+div.table table {
+	border: 1px solid black;
+	border-width: 1px 0;
+}
+
+/* make the TH elements pretty */
+div.table-container table thead th {
+	background: #1e2d3a;
+	color: white;
+	border-left: 1px solid #EB8;
+	border-right: 1px solid #B74;
+	border-top: 1px solid #EB8;
+	font-weight: normal;
+	padding: 4px 3px;
+	text-align: left
+}
+
+/* make the A elements pretty. makes for nice clickable headers                */
+div.table-container table thead a,
+div.table-container table thead a:link,
+div.table-container table thead a:visited {
+	color: #FFF;
+	display: block;
+	text-decoration: none;
+	width: 100%
+}
+
+/* make the A elements pretty. makes for nice clickable headers                */
+/* WARNING: swapping the background on hover may cause problems in WinIE 6.x   */
+div.table-container table thead a:hover {
+	color: #FFF;
+	display: block;
+	text-decoration: underline;
+	width: 100%
+}
+
+/* make TD elements pretty. Provide alternating classes for striping the table */
+/* http://www.alistapart.com/articles/zebratables/                             */
+div.table-container table td, div.table-container table tr td {
+	background: #FFF;
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 2px 3px 3px 4px
+}
+
+div.table-container table tr.even td {
+	background: #EEE;
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 2px 3px 3px 4px
+}
+
+html>body div.table-container thead th:nth-child(1),
+html>body div.table-container thead th:nth-child(2),
+html>body div.table-container tbody td:nth-child(1),
+html>body div.table-container tbody td:nth-child(2) {
+	width: 20px
+}
+
+#portal-down {
+	position: absolute;
+	top: -15px;
+	left: 0;
+	margin: 0;
+}
+
+#portal-down a.open {
+	background: #ccc;
+	border-radius: 5px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+}
+
+#favorites {
+	background: #ccc;
+	display: none;
+}
+
+#favorites li {
+	display: block;
+	padding: 4px 10px;
+	margin-left: 4px;
+}
+
+#favorites li:hover {
+	background: white;
+}
+
+#content .actions {
+	float: right;
+}
+
+#content .actions a {
+	display: inline-block;
+	width: 16px;
+	text-indent: -11110px;
+	text-decoration: none;
+	border: 0;
+}
+
+.actions a.plus { background: url(list-add-symbolic.png) top left; }
+.actions a.gear { background: url(system-run-symbolic.png) top left; }
+.actions a.list { background: url(view-list-symbolic.png) top left; }
+
+#content .table td a {
+	display: none;
+	width: 12px;
+	text-indent: -11110px;
+	text-decoration: none;
+	border: 0;
+	background: url(user-trash-symbolic.png) top center no-repeat;
+	padding: 0 3px;
+}
+
+#content .table tr:hover a {
+	display: inline-block;
+}
+
+#content .table tr:hover td {
+	background: #eee;
+}
+
+#content .table table {
+	margin-bottom: 0;
+}
+
+ul#portal-globalnav {
+	margin-left: 10px;
+}
+
+ul#portal-globalnav li a {
+	width: 32px;
+	text-indent: -10000px;
+	display: block;
+}
+
+ul#portal-globalnav li#portaltab-index_html a {
+	background: transparent url(go-home.png) top left no-repeat;
+}
+
+ul#portal-globalnav li#portaltab-annuaire a {
+	background: transparent url(system-users.png) top left no-repeat;
+}
+
+ul#portal-globalnav li#portaltab-courriers a {
+	background: transparent url(emblem-mail.png) top left no-repeat;
+}
+
+ul#portal-globalnav li {
+	display: inline-block;
+	margin: 0 1ex;
+	width: 32px;
+}
