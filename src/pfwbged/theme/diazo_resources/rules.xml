@@ -41,9 +41,7 @@
         <!-- <after css:theme="body span" css:content="#visual-portal-wrapper" /> -->
         <replace css:theme="#portal-top" css:content="#portal-top"/>
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs"/>
-        <replace css:theme="#portal-column-one" css:content="#portal-column-one"/>
-        <replace css:theme="#portal-column-two" css:content="#portal-column-two"/>
-        <replace css:theme="#portal-column-content" css:content="#portal-column-content"/>
+        <replace css:theme="#portal-columns" css:content="#portal-columns"/>
         <replace css:theme="#portal-title" css:content=".documentFirstHeading"/>
 
     </rules>
