@@ -148,14 +148,15 @@ div.table-container table thead th {
 }
 
 /* make the A elements pretty. makes for nice clickable headers                */
+#content table.listing thead th a,
 div.table-container table thead a,
 div.table-container table thead a:link,
 div.table-container table thead a:visited {
 	color: #FFF;
-	display: block;
 	text-decoration: none;
-	width: 100%
 }
+
+
 
 /* make the A elements pretty. makes for nice clickable headers                */
 /* WARNING: swapping the background on hover may cause problems in WinIE 6.x   */
@@ -380,4 +381,3 @@ dl#plone-contentmenu-display {
 #fieldset-versions {
 	margin-top: -7em;
 }
-
