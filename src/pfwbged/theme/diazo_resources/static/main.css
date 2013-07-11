@@ -381,3 +381,7 @@ dl#plone-contentmenu-display {
 #fieldset-versions {
 	margin-top: -7em;
 }
+
+#fieldset-versions table.listing {
+	width: 100%;
+}
