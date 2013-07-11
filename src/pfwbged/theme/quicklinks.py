@@ -12,6 +12,7 @@ class QuickLinksView(grok.View):
     view_template = ViewPageTemplateFile('quicklinks_templates/view.pt')
 
     def render(self):
+        self.request.response.setHeader('Cache-Control', 'no-cache')
         return self.view_template()
 
     def get_links(self):
