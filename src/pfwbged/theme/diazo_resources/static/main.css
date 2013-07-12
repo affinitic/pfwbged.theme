@@ -385,3 +385,7 @@ dl#plone-contentmenu-display {
 #fieldset-versions table.listing {
 	width: 100%;
 }
+
+#criterias-fieldset legend {
+	cursor: pointer;
+}
