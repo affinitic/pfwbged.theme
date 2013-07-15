@@ -18,10 +18,10 @@ class QuickLinksView(grok.View):
     def get_links(self):
         members_folder = getattr(plone.api.portal.get(), 'Members')
         results = [x for x in members_folder.getFolderContents()
-                   if x.Type in ('Collection', 'pfwbgedcollection')]
+                   if x.portal_type == 'pfwbgedcollection']
         current = plone.api.user.get_current()
         if hasattr(members_folder, current.id):
             current_member_folder = getattr(members_folder, current.id)
             results.extend([x for x in current_member_folder.getFolderContents()
-                            if x.Type in ('Collection', 'pfwbgedcollection')])
+                            if x.portal_type == 'pfwbgedcollection'])
         return results
