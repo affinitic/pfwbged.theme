@@ -389,3 +389,13 @@ dl#plone-contentmenu-display {
 #criterias-fieldset legend {
 	cursor: pointer;
 }
+
+#dashboard-portlets1,
+#dashboard-portlets2 {
+	width: 48%;
+}
+
+#dashboard-portlets3,
+#dashboard-portlets4 {
+	display: none;
+}
