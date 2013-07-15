@@ -23,5 +23,5 @@ class QuickLinksView(grok.View):
         if hasattr(members_folder, current.id):
             current_member_folder = getattr(members_folder, current.id)
             results.extend([x for x in current_member_folder.getFolderContents()
-                            if x.Type in ('Collection', 'pfwbcollection')])
+                            if x.Type in ('Collection', 'pfwbgedcollection')])
         return results
