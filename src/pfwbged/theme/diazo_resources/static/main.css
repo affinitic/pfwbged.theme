@@ -399,3 +399,7 @@ dl#plone-contentmenu-display {
 #dashboard-portlets4 {
 	display: none;
 }
+
+#form-widgets-folder-contenttree-window {
+	z-index: 15000;
+}
