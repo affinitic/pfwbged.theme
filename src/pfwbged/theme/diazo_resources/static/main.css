@@ -120,6 +120,7 @@ div.table {
 	width: 98%;
 }
 
+#content div.table div.table-top,
 #content div.table p {
 	margin: 0 0;
 	padding: 5px 1ex;
