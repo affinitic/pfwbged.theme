@@ -100,6 +100,7 @@ div#edit-bar {
 	border-radius: 5px;
 }
 
+/*
 #content p.table-bottom a {
 	display: inline-block;
 	width: 16px;
@@ -112,6 +113,7 @@ a.first { background: url(go-first-symbolic.png) top left no-repeat; }
 a.last { background: url(go-last-symbolic.png) top left no-repeat; }
 a.next { background: url(go-next-symbolic.png) top left no-repeat; }
 a.prev { background: url(go-previous-symbolic.png) top left no-repeat; }
+*/
 
 div.table {
 	border: 1px solid black;
