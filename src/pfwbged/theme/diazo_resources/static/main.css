@@ -396,3 +396,7 @@ dl#plone-contentmenu-display {
 #form-widgets-folder-contenttree-window {
 	z-index: 15000;
 }
+
+#LSResult {
+	margin-top: 0;
+}
