@@ -187,13 +187,6 @@ div.table-container table tr.even td {
 	padding: 2px 3px 3px 4px
 }
 
-html>body div.table-container thead th:nth-child(1),
-html>body div.table-container thead th:nth-child(2),
-html>body div.table-container tbody td:nth-child(1),
-html>body div.table-container tbody td:nth-child(2) {
-	width: 20px
-}
-
 #portal-down {
 	position: absolute;
 	top: 0px;
