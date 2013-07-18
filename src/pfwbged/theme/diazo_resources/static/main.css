@@ -358,6 +358,10 @@ ul#content-views #contentview-local_roles {
 	margin-left: 3px;
 }
 
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+	background-color: inherit;
+}
+
 #contentActionMenus dl.actionMenu.activated .actionMenuContent,
 #contentActionMenus dl.actionMenu.activated a {
 	border-color: #1e2d3a;
