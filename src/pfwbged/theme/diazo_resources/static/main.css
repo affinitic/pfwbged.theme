@@ -209,6 +209,7 @@ div.table-container table tr.even td {
 }
 
 #favorites {
+	background: #d7d7d7;
 	background: rgba(210, 210, 210, 0.9);
 	display: none;
 	z-index: -100;
