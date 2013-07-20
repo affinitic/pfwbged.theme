@@ -412,3 +412,13 @@ dl#plone-contentmenu-display {
 #LSResult {
 	margin-top: 0;
 }
+
+body.template-dashboard #edit-bar {
+	position: absolute;
+	right: -10px;
+	float: right;
+}
+
+body.template-dashboard #edit-bar li.selected {
+	display: none;
+}
