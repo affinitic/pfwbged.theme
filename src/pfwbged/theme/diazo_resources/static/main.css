@@ -225,6 +225,10 @@ div.table-container table tr.even td {
 	background: white;
 }
 
+#favorites li a {
+        display: block;
+}
+
 #content .actions {
 	float: right;
 }

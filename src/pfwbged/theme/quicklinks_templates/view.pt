@@ -2,8 +2,16 @@
      xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:metal="http://xml.zope.org/namespaces/metal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <ul>
-          <li tal:repeat="quicklink view/get_links"><a
+  <ul tal:define="home_url view/get_home_url;
+                  global_collections view/get_global_collections;
+                  user_collections view/get_user_collections;
+             ">
+     <li class="home_url" tal:condition="home_url"><a tal:attributes="href home_url">Dossier personnel</a></li>
+     <hr tal:condition="python: home_url and user_collections"/>
+     <li tal:repeat="quicklink global_collections"><a
+                  tal:attributes="href quicklink/getURL" tal:content="quicklink/Title">plop</a></li>
+     <hr tal:condition="python: global_collections and user_collections"/>
+     <li tal:repeat="quicklink user_collections"><a
                   tal:attributes="href quicklink/getURL" tal:content="quicklink/Title">plop</a></li>
   </ul>
 </div>

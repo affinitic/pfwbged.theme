@@ -15,13 +15,27 @@ class QuickLinksView(grok.View):
         self.request.response.setHeader('Cache-Control', 'no-cache')
         return self.view_template()
 
-    def get_links(self):
+    def get_home_url(self):
+        current = plone.api.user.get_current()
+        members_folder = getattr(plone.api.portal.get(), 'Members')
+        if hasattr(members_folder, current.id):
+            return getattr(members_folder, current.id).absolute_url()
+        return None
+
+    def get_global_collections(self):
         members_folder = getattr(plone.api.portal.get(), 'Members')
         results = list(members_folder.getFolderContents(
-                   contentFilter={'portal_type': 'pfwbgedcollection'}))
+            contentFilter={'portal_type': 'pfwbgedcollection',
+                'sort_on': 'sortable_title'}))
+        return results
+
+    def get_user_collections(self):
+        members_folder = getattr(plone.api.portal.get(), 'Members')
         current = plone.api.user.get_current()
-        if hasattr(members_folder, current.id):
-            current_member_folder = getattr(members_folder, current.id)
-            results.extend(list(current_member_folder.getFolderContents(
-                contentFilter={'portal_type': 'pfwbgedcollection'})))
+        if not hasattr(members_folder, current.id):
+            return None
+        current_member_folder = getattr(members_folder, current.id)
+        results = list(current_member_folder.getFolderContents(
+            contentFilter={'portal_type': 'pfwbgedcollection',
+                'sort_on': 'sortable_title'}))
         return results
