@@ -215,6 +215,14 @@ div.table-container table tr.even td {
 	z-index: -100;
 }
 
+#favorites hr {
+	border: 0;
+	color: #eef;
+	background: #eef;
+	height: 1px;
+	margin-left: 3px;
+}
+
 #favorites li {
 	display: block;
 	padding: 4px 10px;
