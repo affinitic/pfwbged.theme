@@ -442,6 +442,10 @@ dl#plone-contentmenu-display {
 	display: none;
 }
 
+#dashboard table.listing {
+	width: 100%;
+}
+
 #form-widgets-folder-contenttree-window {
 	z-index: 15000;
 }
