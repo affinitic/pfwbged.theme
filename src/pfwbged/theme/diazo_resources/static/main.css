@@ -280,18 +280,51 @@ ul#portal-globalnav li a {
 	-moz-transition: all .2s ease-in-out;
 }
 
-ul#portal-globalnav li#portaltab-index_html {
+ul#portal-globalnav li#portaltab-index_html,
+ul#portal-globalnav li#portaltab-mystuff,
+ul#portal-globalnav li#portaltab-annuaire,
+ul#portal-globalnav li#portaltab-documents {
 	width: 32px;
 	margin-right: 10px;
 }
 
-ul#portal-globalnav li#portaltab-index_html a {
+ul#portal-globalnav li#portaltab-mystuff {
+	display: none;
+}
+
+ul#portal-globalnav li#portaltab-mystuff a,
+ul#portal-globalnav li#portaltab-index_html a,
+ul#portal-globalnav li#portaltab-annuaire a,
+ul#portal-globalnav li#portaltab-documents a {
 	background: transparent url(go-home.png) top left no-repeat;
 	width: 32px;
 	text-indent: -10000px;
 	display: block;
 	min-width: 0;
 	border: none;
+}
+
+ul#portal-globalnav li#portaltab-annuaire a {
+	background-image: url(system-users.png);
+}
+
+ul#portal-globalnav li#portaltab-documents a {
+	background-image: url(emblem-documents.png);
+}
+
+ul#portal-globalnav li#portaltab-index_html a:hover,
+ul#portal-globalnav li.selected#portaltab-index_html a {
+	background-image: url(go-home-selected.png);
+}
+
+ul#portal-globalnav li#portaltab-annuaire a:hover,
+ul#portal-globalnav li.selected#portaltab-annuaire a {
+	background-image: url(system-users-selected.png);
+}
+
+ul#portal-globalnav li#portaltab-documents a:hover,
+ul#portal-globalnav li.selected#portaltab-documents a {
+	background-image: url(emblem-documents-selected.png);
 }
 
 ul#portal-globalnav li.selected a,
