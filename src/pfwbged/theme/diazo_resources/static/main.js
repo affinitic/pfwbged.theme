@@ -9,6 +9,18 @@ $(function() {
   if ($('#portaltab-mystuff.selected').length == 1) {
      $('#portaltab-index_html').addClass('selected');
   }
+
+  /* watch version being selected, so menu entries can be shown/hidden */
+  $('#contentActionMenus .version-action').closest('li').hide();
+  $('.version-link').closest('tr').on('select-version', function() {
+    var version_href = $(this).find('.version-link').attr('href');
+    var version_id = version_href.substr(version_href.lastIndexOf('/')+1);
+    $('#contentActionMenus .version-action').closest('li').hide();
+    $('#contentActionMenus .version-id-' + version_id).closest('li').show();
+    console.log('a version has been selected', $(this));
+  });
+
+  /* initialize quicklinks/favorites menu */
   $('#portal-down a.open').click(function() {
     if ($('#favorites ul').length == 0) {
       $('#favorites').load('quicklinks');
