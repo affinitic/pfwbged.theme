@@ -481,3 +481,35 @@ body.template-dashboard #edit-bar {
 body.template-dashboard #edit-bar li.selected {
 	display: none;
 }
+
+
+#portal-body tr.row-state-published td { background: #b54040; }
+#portal-body tr.row-state-abandoned td { background: #aaaaaa; }
+#portal-body tr.row-state-attributed td { }
+#portal-body tr.row-state-done td { background: #62ae17; }
+#portal-body tr.row-state-in-progress td { background: #e38623; }
+#portal-body tr.row-state-refusal-requested td { }
+#portal-body tr.row-state-todo td { background: #ae1717; }
+#portal-body tr.row-state-answered td { background: #62ae17; }
+#portal-body tr.row-state-assigning td { background: #b54040; }
+#portal-body tr.row-state-noaction td { background: #aaaaaa; }
+#portal-body tr.row-state-processing td { background: #e38623; }
+#portal-body tr.row-state-registering td { }
+#portal-body tr.row-state-ready_to_sent td { }
+#portal-body tr.row-state-sent td { background: #62ae17; }
+#portal-body tr.row-state-writing td { background: #e38623; }
+
+#portal-body tr.row-state-published td a,
+#portal-body tr.row-state-abandoned td a,
+#portal-body tr.row-state-done td a,
+#portal-body tr.row-state-in-progress td a,
+#portal-body tr.row-state-todo td a,
+#portal-body tr.row-state-answered td a,
+#portal-body tr.row-state-assigning td a,
+#portal-body tr.row-state-noaction td a,
+#portal-body tr.row-state-processing td a,
+#portal-body tr.row-state-sent td a,
+#portal-body tr.row-state-writing td a {
+	color: #10171f;
+}
+
