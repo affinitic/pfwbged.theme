@@ -8,6 +8,7 @@
     i18n_domain="diazotheme.test">
 
   <include package="five.grok" />
+  <include package="z3c.jbot" />
   <grok:grok package="." />
 
   <i18n:registerTranslations directory="locales" />
