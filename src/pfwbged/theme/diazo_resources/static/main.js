@@ -17,7 +17,6 @@ $(function() {
     var version_id = version_href.substr(version_href.lastIndexOf('/')+1);
     $('#contentActionMenus .version-action').closest('li').hide();
     $('#contentActionMenus .version-id-' + version_id).closest('li').show();
-    console.log('a version has been selected', $(this));
   });
 
   /* initialize quicklinks/favorites menu */
