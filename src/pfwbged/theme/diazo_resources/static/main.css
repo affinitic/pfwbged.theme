@@ -24,6 +24,10 @@ div#portal-top h1 {
 	font-weight: normal;
 }
 
+li#personaltools-preferences {
+	display: none;
+}
+
 ul#portal-globalnav {
 	background: transparent;
 }
