@@ -31,4 +31,16 @@
       layer=".interfaces.ICustomTheme"
       />
 
+  <plone:portlet
+        name="pfwbged.theme.foldernav.Navigation"
+        interface=".foldernav.INavigationPortlet"
+        assignment=".foldernav.Assignment"
+        renderer=".foldernav.Renderer"
+        addview=".foldernav.AddForm"
+        editview=".foldernav.EditForm"
+        />
+
+  <adapter factory=".foldernav.QueryBuilder" />
+  <adapter factory=".foldernav.NavtreeStrategy" />
+
 </configure>
