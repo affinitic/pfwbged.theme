@@ -300,10 +300,6 @@ ul#portal-globalnav li#portaltab-documents {
 	margin-right: 10px;
 }
 
-ul#portal-globalnav li#portaltab-mystuff {
-	display: none;
-}
-
 ul#portal-globalnav li#portaltab-mystuff a,
 ul#portal-globalnav li#portaltab-index_html a,
 ul#portal-globalnav li#portaltab-annuaire a,
@@ -314,6 +310,10 @@ ul#portal-globalnav li#portaltab-documents a {
 	display: block;
 	min-width: 0;
 	border: none;
+}
+
+ul#portal-globalnav li#portaltab-mystuff a {
+	background-image: url(folder.png);
 }
 
 ul#portal-globalnav li#portaltab-annuaire a {
@@ -337,6 +337,11 @@ ul#portal-globalnav li.selected#portaltab-annuaire a {
 ul#portal-globalnav li#portaltab-documents a:hover,
 ul#portal-globalnav li.selected#portaltab-documents a {
 	background-image: url(emblem-documents-selected.png);
+}
+
+ul#portal-globalnav li#portaltab-mystuff a:hover,
+ul#portal-globalnav li.selected#portaltab-mystuff a {
+	background-image: url(folder-selected.png);
 }
 
 ul#portal-globalnav li.selected a,
