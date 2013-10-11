@@ -3,21 +3,21 @@
 /*jslint white:false, onevar:true, undef:true, nomen:true, eqeqeq:true, plusplus:true, bitwise:true, regexp:true, newcap:true, immed:true, strict:false, browser:true */
 /*global jQuery:false, document:false, window:false, location:false */
 
+/* watch version being selected, so menu entries can be shown/hidden */
+$('#contentActionMenus .version-action').closest('li').hide();
+$('.version-link').closest('tr').on('select-version', function() {
+  var version_href = $(this).find('.version-link').attr('href');
+  var version_id = version_href.substr(version_href.lastIndexOf('/')+1);
+  $('#contentActionMenus .version-action').closest('li').hide();
+  $('#contentActionMenus .version-id-' + version_id).closest('li').show();
+});
+
 $(function() {
   /* highlight index icon when the member icon is selected, as that one is
    * hidden; this should probably be done earlier, when producing the HTML. */
   if ($('#portaltab-mystuff.selected').length == 1) {
      $('#portaltab-index_html').addClass('selected');
   }
-
-  /* watch version being selected, so menu entries can be shown/hidden */
-  $('#contentActionMenus .version-action').closest('li').hide();
-  $('.version-link').closest('tr').on('select-version', function() {
-    var version_href = $(this).find('.version-link').attr('href');
-    var version_id = version_href.substr(version_href.lastIndexOf('/')+1);
-    $('#contentActionMenus .version-action').closest('li').hide();
-    $('#contentActionMenus .version-id-' + version_id).closest('li').show();
-  });
 
   /* initialize quicklinks/favorites menu */
   $('#portal-down a.open').click(function() {
