@@ -13,12 +13,6 @@ $('.version-link').closest('tr').on('select-version', function() {
 });
 
 $(function() {
-  /* highlight index icon when the member icon is selected, as that one is
-   * hidden; this should probably be done earlier, when producing the HTML. */
-  if ($('#portaltab-mystuff.selected').length == 1) {
-     $('#portaltab-index_html').addClass('selected');
-  }
-
   /* initialize quicklinks/favorites menu */
   $('#portal-down a.open').click(function() {
     if ($('#favorites ul').length == 0) {
