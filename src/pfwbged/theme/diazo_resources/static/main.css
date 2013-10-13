@@ -532,3 +532,7 @@ body.template-dashboard #edit-bar li.selected {
 #portal-advanced-search a {
 	color: white;
 }
+
+button.selected {
+	border-style: inset;
+}
