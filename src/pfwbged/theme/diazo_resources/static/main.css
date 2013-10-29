@@ -295,7 +295,8 @@ ul#portal-globalnav li a {
 ul#portal-globalnav li#portaltab-index_html,
 ul#portal-globalnav li#portaltab-mystuff,
 ul#portal-globalnav li#portaltab-annuaire,
-ul#portal-globalnav li#portaltab-documents {
+ul#portal-globalnav li#portaltab-documents,
+ul#portal-globalnav li#portaltab-help {
 	width: 32px;
 	margin-right: 10px;
 }
@@ -303,7 +304,8 @@ ul#portal-globalnav li#portaltab-documents {
 ul#portal-globalnav li#portaltab-mystuff a,
 ul#portal-globalnav li#portaltab-index_html a,
 ul#portal-globalnav li#portaltab-annuaire a,
-ul#portal-globalnav li#portaltab-documents a {
+ul#portal-globalnav li#portaltab-documents a,
+ul#portal-globalnav li#portaltab-help a {
 	background: transparent url(go-home.png) top left no-repeat;
 	width: 32px;
 	text-indent: -10000px;
@@ -324,6 +326,10 @@ ul#portal-globalnav li#portaltab-documents a {
 	background-image: url(emblem-documents.png);
 }
 
+ul#portal-globalnav li#portaltab-help a {
+	background-image: url(help-browser.png);
+}
+
 ul#portal-globalnav li#portaltab-index_html a:hover,
 ul#portal-globalnav li.selected#portaltab-index_html a {
 	background-image: url(go-home-selected.png);
@@ -342,6 +348,10 @@ ul#portal-globalnav li.selected#portaltab-documents a {
 ul#portal-globalnav li#portaltab-mystuff a:hover,
 ul#portal-globalnav li.selected#portaltab-mystuff a {
 	background-image: url(folder-selected.png);
+}
+
+ul#portal-globalnav li#portaltab-help a:hover {
+	background-image: url(help-browser-selected.png);
 }
 
 ul#portal-globalnav li.selected a,
