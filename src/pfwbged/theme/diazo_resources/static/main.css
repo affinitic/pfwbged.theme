@@ -256,6 +256,7 @@ div.table-container table tr.even td {
 .actions a.plus { background: url(list-add-symbolic.png) top left no-repeat; }
 .actions a.gear { background: url(system-run-symbolic.png) top left no-repeat; }
 .actions a.list { background: url(view-list-symbolic.png) top left no-repeat; }
+.actions a.columns { background: url(view-columns-symbolic.png) top left no-repeat; }
 
 #content .table td a.trash {
 	display: none;
