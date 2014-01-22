@@ -64,7 +64,7 @@ div#portal-body {
 	position: relative;
 }
 
-#portal-body-top .documentFirstHeading {
+#portal-body-top h1 {
 	padding-left: 10px;
 }
 
@@ -554,4 +554,8 @@ button.selected {
 
 #DV-container {
 	width: auto !important;
+}
+
+.portaltype-folder #content h1 {
+        display: none;
 }
