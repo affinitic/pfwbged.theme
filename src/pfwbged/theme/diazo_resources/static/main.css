@@ -258,6 +258,10 @@ div.table-container table tr.even td {
 .actions a.list { background: url(view-list-symbolic.png) top left no-repeat; }
 .actions a.columns { background: url(view-columns-symbolic.png) top left no-repeat; }
 
+ul#extra-columns label {
+	font-weight: normal;
+}
+
 #content .table td a.trash {
 	display: none;
 	width: 12px;
@@ -546,4 +550,8 @@ body.template-dashboard #edit-bar li.selected {
 
 button.selected {
 	border-style: inset;
+}
+
+#DV-container {
+	width: auto !important;
 }
