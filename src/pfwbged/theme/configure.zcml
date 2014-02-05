@@ -43,4 +43,13 @@
   <adapter factory=".foldernav.QueryBuilder" />
   <adapter factory=".foldernav.NavtreeStrategy" />
 
+  <plone:portlet
+        name="pfwbged.theme.folderlinks.FolderLinks"
+        interface=".folderlinks.IFolderLinksPortlet"
+        assignment=".folderlinks.Assignment"
+        renderer=".folderlinks.Renderer"
+        addview=".folderlinks.AddForm"
+        editview=".folderlinks.EditForm"
+        />
+
 </configure>

@@ -1,0 +1,20 @@
+<dl class="portlet portletFolderLinks" i18n:domain="pfwbged.theme">
+  <dt class="portletHeader">
+    <span class="portletTopLeft"></span>
+    <!-- title -->
+    <span class="portletTopRight"></span>
+  </dt>
+<tal:items tal:repeat="folder view/folders">
+  <dd class="portletItem"
+      tal:define="oddrow repeat/folder/odd;"
+       tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+    <a href="" tal:attributes="href folder/url">
+      <tal:title content="folder/title">Title</tal:title>
+    </a>
+  </dd>
+</tal:items>
+  <dd class="portletFooter">
+    <span class="portletBottomLeft"></span>
+    <span class="portletBottomRight"></span>
+  </dd>
+</dl>

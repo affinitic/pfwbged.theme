@@ -13,4 +13,12 @@
                     description"
    />
 
+ <portlet
+   addview="pfwbged.theme.folderlinks.FolderLinks"
+   title="Folder Links"
+   description="A portlet to display links to main folders"
+   i18n:attributes="title;
+                    description"
+   />
+
 </portlets>
