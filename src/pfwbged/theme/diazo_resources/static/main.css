@@ -559,3 +559,7 @@ button.selected {
 .portaltype-folder #content h1 {
         display: none;
 }
+
+ul#portal-globalnav li#portaltab-dossiers {
+	display: none;
+}

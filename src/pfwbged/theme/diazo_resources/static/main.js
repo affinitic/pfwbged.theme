@@ -12,6 +12,12 @@ $('.version-link').closest('tr').on('select-version', function() {
   $('#contentActionMenus .version-id-' + version_id).closest('li').show();
 });
 
+/* highlight home folder icon when the dossiers icon is selected, as that one
+ * is hidden (this should probably be done earlier, when producing the HTML). */
+if ($('#portaltab-dossiers.selected').length == 1) {
+   $('#portaltab-mystuff').addClass('selected');
+}
+
 $(function() {
   /* initialize quicklinks/favorites menu */
   $('#portal-down a.open').click(function() {
