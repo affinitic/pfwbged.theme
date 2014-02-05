@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pfwbged.theme\n"
+"POT-Creation-Date: 2014-02-05 12:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Frederic Peters <fpeters@entrouvert.com>\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+
+#: ../profiles/default/portlets.xml
+msgid "A portlet to display links to main folders"
+msgstr "Un portlet pour afficher des liens vers les dossiers principaux"
+
+#: ../profiles/default/portlets.xml
+msgid "Folder Links"
+msgstr "Liens des dossiers"
+

@@ -12,8 +12,8 @@ from Products.CMFPlone.utils import base_hasattr
 
 from plone import api
 
+from . import _
 
-_ = lambda x:x
 
 class IFolderLinksPortlet(IPortletDataProvider):
     pass

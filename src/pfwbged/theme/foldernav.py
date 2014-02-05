@@ -25,7 +25,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from plone.app.portlets.portlets import base
 
-_ = lambda x:x
+from . import _
 
 
 class INavigationPortlet(IPortletDataProvider):
@@ -145,9 +145,11 @@ class Renderer(base.Renderer):
         root = '/'.join(portal.getPhysicalPath())
 
         roots = ['%s/Members/%s' % (root, user.id)]
-        for service in ['services/informatique',]:
-            # XXX: get real data from user
-            roots.append('%s/%s' % (root, service))
+        roots.append(['%s/dossiers' % root])
+        # XXX: iterate over folders in /services/, and add them if readable
+        #for service in ['services/informatique',]:
+        #    # XXX: get real data from user
+        #    roots.append('%s/%s' % (root, service))
 
         tree = {}
         tree['children'] = []
@@ -164,7 +166,8 @@ class Renderer(base.Renderer):
             query = queryBuilder()
             query['path']['query'] = root
             result = buildFolderTree(context, obj=ctx, query=query, strategy=strategy)
-            tree['children'].append(result)
+            if result != {'children': []}:
+                tree['children'].append(result)
 
         return tree
 

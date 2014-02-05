@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pfwbged.theme\n"
+"POT-Creation-Date: 2014-02-05 12:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Frederic Peters <fpeters@entrouvert.com>\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: pfwbged.theme\n"
+
+#: ../folderlinks.py:54
+msgid "Add Folder Links Portlet"
+msgstr "Ajouter portlet de liens vers dossiers"
+
+#: ../foldernav.py:186
+msgid "Add Folder Navigation Portlet"
+msgstr "Ajouter portlet de navigation entre dossiers"
+
+#: ../folderlinks.py:63
+msgid "Edit Folder Links Portlet"
+msgstr "Modifier portlet de liens vers dossiers"
+
+#: ../foldernav.py:195
+msgid "Edit Folder Navigation Portlet"
+msgstr "Modifier porlet de navigation entre dossiers"
+
+#: ../folderlinks.py:24
+msgid "Folder Links"
+msgstr "Liens des dossiers"
+
+#: ../folderlinks.py:41
+msgid "Home Folder"
+msgstr "Dossier personnel"
+
+#: ../foldernav.py:45
+msgid "Navigation"
+msgstr "Navigation"
+
+#: ../foldernav.py:37
+msgid "The title of the navigation tree."
+msgstr "Le titre de l'arbre de navigation."
+
+#: ../foldernav.py:187
+msgid "This portlet display a navigation tree."
+msgstr "Ce portlet affiche un arbre de navigation."
+
+#: ../folderlinks.py:55
+msgid "This portlet display links to main folders"
+msgstr "Ce portlet affiche des liens vers les dossiers principaux."
+
+#: ../foldernav.py:36
+msgid "Title"
+msgstr "Titre"
+
