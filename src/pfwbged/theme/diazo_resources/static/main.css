@@ -582,3 +582,8 @@ dl.portletFolder dd.current-folder {
 	width: 80%;
 	border-radius: 1ex;
 }
+
+td.icon-column {
+	width: 20px;
+	text-align: center;
+}
