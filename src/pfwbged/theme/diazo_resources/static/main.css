@@ -563,3 +563,22 @@ button.selected {
 ul#portal-globalnav li#portaltab-dossiers {
 	display: none;
 }
+
+dl.portletFolder dd.portletItem,
+dl.portletFolderLinks dd.portletItem {
+	padding: 1ex 1em;
+	text-align: center;
+}
+
+dl.portletFolder dd.portletFooter,
+dl.portletFolderLinks dd.portletFooter {
+	padding: 0;
+}
+
+dl.portletFolder dd.current-folder {
+	margin: 2px auto;
+	background: #3e5975;
+	color: white;
+	width: 80%;
+	border-radius: 1ex;
+}
