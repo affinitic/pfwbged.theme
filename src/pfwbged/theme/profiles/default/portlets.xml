@@ -5,6 +5,7 @@
 
  <!-- Portlet type registrations -->
 
+ <!--
  <portlet
    addview="pfwbged.theme.foldernav.Navigation"
    title="Folder Navigation portlet"
@@ -12,6 +13,7 @@
    i18n:attributes="title;
                     description"
    />
+   -->
 
  <portlet
    addview="pfwbged.theme.folderlinks.FolderLinks"
