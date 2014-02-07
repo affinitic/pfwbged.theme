@@ -693,3 +693,14 @@ fieldset.text-fieldset label {
 div.overlay dl.portletMessage {
 	display: none;
 }
+
+body.template-dashboard #edit-bar {
+	position: absolute;
+	right: -10px;
+	top: -45px;
+}
+
+body.template-manage-dashboard #edit-bar li.selected,
+body.template-dashboard #edit-bar li.selected {
+	display: none;
+}
