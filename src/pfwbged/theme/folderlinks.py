@@ -16,16 +16,24 @@ from . import _
 
 
 class IFolderLinksPortlet(IPortletDataProvider):
-    pass
+    name = schema.TextLine(
+            title=_(u"Title"),
+            description=_(u"The title of the navigation tree."),
+            default=u"",
+            required=False)
 
 
 class Assignment(base.Assignment):
     implements(IFolderLinksPortlet)
     title = _(u'Folder Links')
+    name = u""
 
 
 class Renderer(base.Renderer):
     render = ViewPageTemplateFile('folderlinks.pt')
+
+    def title(self):
+        return self.data.name or ''
 
     @property
     def available(self):

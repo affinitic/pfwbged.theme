@@ -1,7 +1,7 @@
 <dl class="portlet portletFolderLinks" i18n:domain="pfwbged.theme">
   <dt class="portletHeader">
     <span class="portletTopLeft"></span>
-    <!-- title -->
+    <span tal:content="view/title">title</span>
     <span class="portletTopRight"></span>
   </dt>
 <tal:items tal:repeat="folder view/folders">
