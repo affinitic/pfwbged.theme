@@ -9,11 +9,11 @@ div.width-full {
 }
 
 div#portal-top {
-	background-color: #3e5975;
+	background: #3e5975 url(admin-alpha-header.png) no-repeat fixed top right;
 	margin: 0.5%;
 	border-radius: 1ex;
 	width: 99%;
-	box-shadow: 2px 2px 2px 0px #999;
+	box-shadow: 0px 2px 2px 0px #555;
 	position: relative;
 }
 
@@ -22,6 +22,7 @@ div#portal-top h1 {
 	margin-bottom: 0.5ex;
 	margin-left: 1ex;
 	font-weight: normal;
+	text-shadow: 0px 1px 5px black;
 }
 
 li#personaltools-preferences {
@@ -58,6 +59,7 @@ div#portal-footer-wrapper {
 div#portal-body {
 	clear: both;
 	background: #a2b2b4;
+	background: #a2b2b4 url(admin-alpha-header.png) no-repeat fixed top right;
 	margin: 0.5%;
 	border-radius: 1ex;
 	width: 99%;
@@ -66,12 +68,13 @@ div#portal-body {
 
 #portal-body-top h1 {
 	padding-left: 10px;
+	text-shadow: 0px 1px 5px white;
 }
 
 #portal-breadcrumbs {
 	padding-left: 15px;
-	height: 20px;
-	line-height: 20px;
+	height: 22px;
+	line-height: 22px;
 }
 
 div#portal-columns #portal-breadcrumbs {
@@ -208,14 +211,19 @@ div.table-container table tr.even td {
 	border-radius: 5px;
 	display: inline-block;
 	width: 20px;
-	height: 20px;
+	padding: 3px 0px;
 	text-align: center;
 }
 
+#contentActionMenus dl.actionMenu.activated .actionMenuContent,
 #favorites {
 	background: #d7d7d7;
 	background: rgba(210, 210, 210, 0.9);
-	display: none;
+	border-bottom: none;
+	box-shadow: 0px 2px 2px 0px #555;
+}
+
+#favorites {
 	z-index: -100;
 }
 
@@ -436,8 +444,12 @@ body.portaltype-folder ul#content-views #contentview-local_roles {
 	background-color: inherit;
 }
 
-#contentActionMenus dl.actionMenu.activated .actionMenuContent,
-#contentActionMenus dl.actionMenu.activated a {
+#contentActionMenus dl.actionMenu.activated .actionMenuContent a {
+	color: black;
+	font-size: 100%;
+}
+
+#contentActionMenus dl.actionMenu.activated dt.actionMenuHeader a {
 	border-color: #1e2d3a;
 	background-color: #1e2d3a;
 }
@@ -586,4 +598,8 @@ dl.portletFolder dd.current-folder {
 td.icon-column {
 	width: 20px;
 	text-align: center;
+}
+
+#content {
+	font-size: 100%;
 }
