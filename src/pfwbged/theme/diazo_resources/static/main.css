@@ -696,6 +696,7 @@ fieldset.text-fieldset label {
 	margin-bottom: 1ex;
 }
 
+div.overlay a.managePortletsFallback,
 div.overlay dl.portletMessage {
 	display: none;
 }
