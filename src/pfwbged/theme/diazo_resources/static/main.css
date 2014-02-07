@@ -2,6 +2,7 @@
 
 html, body {
 	height: 101%;
+	font: 100% sans-serif;
 }
 
 div.width-full {
@@ -494,7 +495,7 @@ dl#plone-contentmenu-display {
 }
 
 #fieldset-versions {
-	margin-top: -7em;
+	margin-top: -10em;
 }
 
 #fieldset-versions table.listing {
@@ -505,8 +506,12 @@ dl#plone-contentmenu-display {
 	cursor: pointer;
 }
 
+#dashboard {
+	font-size: 100%;
+}
+
 #dashboard-portlets1 {
-	width: 24%;
+	width: 22.75%;
 	padding: 0;
 }
 
@@ -521,7 +526,7 @@ dl#plone-contentmenu-display {
 	display: none;
 }
 
-#dashboard dl dt.portletHeader {
+dl dt.portletHeader {
 	box-shadow: 0 0 2px black;
 }
 
@@ -529,7 +534,7 @@ dl#plone-contentmenu-display {
 	margin: 0;
 }
 
-#dashboard dl.portletFolderLinks dd {
+dl.portletFolderLinks dd {
 	text-align: left;
 }
 
@@ -619,7 +624,6 @@ dl.portlet {
 dl.portletFolder dd.portletItem,
 dl.portletFolderLinks dd.portletItem {
 	padding: 1ex 1em;
-	text-align: center;
 }
 
 dl.portletFolder dd.portletFooter,
@@ -631,7 +635,6 @@ dl.portletFolder dd.current-folder {
 	margin: 2px auto;
 	background: #3e5975;
 	color: white;
-	width: 80%;
 	border-radius: 1ex;
 }
 
@@ -706,4 +709,12 @@ body.template-dashboard #edit-bar {
 body.template-manage-dashboard #edit-bar li.selected,
 body.template-dashboard #edit-bar li.selected {
 	display: none;
+}
+
+#document-viewlets {
+	width: 50%;
+}
+
+#document-viewlets fieldset table {
+	width: 100%;
 }
