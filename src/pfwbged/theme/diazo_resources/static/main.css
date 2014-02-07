@@ -527,17 +527,6 @@ dl#plone-contentmenu-display {
 	margin-top: 0;
 }
 
-body.template-dashboard #edit-bar {
-	position: absolute;
-	right: -10px;
-	float: right;
-}
-
-body.template-dashboard #edit-bar li.selected {
-	display: none;
-}
-
-
 #portal-body tr.row-state-published td { background: #b54040; }
 #portal-body tr.row-state-abandoned td { background: #aaaaaa; }
 #portal-body tr.row-state-attributed td { }
