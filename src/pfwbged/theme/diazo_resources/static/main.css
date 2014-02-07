@@ -590,6 +590,10 @@ ul#portal-globalnav li#portaltab-dossiers {
 	display: none;
 }
 
+dl.portlet {
+	font-size: 90%;
+}
+
 dl.portletFolder dd.portletItem,
 dl.portletFolderLinks dd.portletItem {
 	padding: 1ex 1em;
