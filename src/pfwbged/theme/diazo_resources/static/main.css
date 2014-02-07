@@ -9,7 +9,7 @@ div.width-full {
 }
 
 div#portal-top {
-	background: #3e5975 url(admin-alpha-header.png) no-repeat fixed top right;
+	background: #1e1f3b url(admin-alpha-header.png) no-repeat right top;
 	margin: 0.5%;
 	border-radius: 1ex;
 	width: 99%;
@@ -59,7 +59,7 @@ div#portal-footer-wrapper {
 div#portal-body {
 	clear: both;
 	background: #a2b2b4;
-	background: #a2b2b4 url(admin-alpha-header.png) no-repeat fixed top right;
+	background: #3e5975 url(admin-alpha-header.png) no-repeat right -95px;
 	margin: 0.5%;
 	border-radius: 1ex;
 	width: 99%;
@@ -68,13 +68,23 @@ div#portal-body {
 
 #portal-body-top h1 {
 	padding-left: 10px;
-	text-shadow: 0px 1px 5px white;
+	color: white;
+	text-shadow: 0px 1px 5px black;
 }
 
 #portal-breadcrumbs {
-	padding-left: 15px;
+	padding-left: 10px;
 	height: 22px;
 	line-height: 22px;
+	color: white;
+}
+
+#portal-breadcrumbs .breadcrumbSeparator {
+	color: #ddd;
+}
+
+#portal-breadcrumbs a {
+	color: white;
 }
 
 div#portal-columns #portal-breadcrumbs {
@@ -402,6 +412,10 @@ ul#content-views li a {
 	background-color: #1e2d3a;
 	border-radius: 5px;
 	color: white;
+}
+
+ul#content-views li a:hover {
+	box-shadow: 0px 0px 5px #666;
 }
 
 ul#content-views li.selected a {
