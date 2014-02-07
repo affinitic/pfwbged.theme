@@ -505,9 +505,12 @@ dl#plone-contentmenu-display {
 	cursor: pointer;
 }
 
-#dashboard-portlets1,
+#dashboard-portlets1 {
+	width: 24%;
+}
+
 #dashboard-portlets2 {
-	width: 48%;
+	width: 72%;
 }
 
 #dashboard-portlets3,
@@ -515,8 +518,30 @@ dl#plone-contentmenu-display {
 	display: none;
 }
 
+#dashboard dl dt.portletHeader {
+	box-shadow: 0 0 2px black;
+}
+
+#dashboard dl dd.portletItem {
+	margin: 0;
+}
+
+#dashboard dl.portletFolderLinks dd {
+	text-align: left;
+}
+
 #dashboard table.listing {
 	width: 100%;
+}
+
+#dashboard dl.portletCollection dd.portletItem {
+	padding: 1em 0;
+}
+
+#dashboard dl.portletCollection dd.portletFooter {
+	padding: 0;
+	margin: 0;
+	margin-left: 1em;
 }
 
 #form-widgets-folder-contenttree-window {
