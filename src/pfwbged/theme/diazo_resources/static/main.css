@@ -675,3 +675,7 @@ fieldset.text-fieldset label {
 	display: inline-block;
 	margin-bottom: 1ex;
 }
+
+div.overlay dl.portletMessage {
+	display: none;
+}
