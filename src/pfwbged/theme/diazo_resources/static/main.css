@@ -507,10 +507,13 @@ dl#plone-contentmenu-display {
 
 #dashboard-portlets1 {
 	width: 24%;
+	padding: 0;
 }
 
 #dashboard-portlets2 {
-	width: 72%;
+	width: 74%;
+	float: right;
+	padding: 0;
 }
 
 #dashboard-portlets3,
