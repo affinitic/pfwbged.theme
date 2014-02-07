@@ -603,3 +603,46 @@ td.icon-column {
 #content {
 	font-size: 100%;
 }
+
+div#pfwbged-criterias .metatypes,
+div#contact-table-view .criteria-content,
+div#contact-table-view .metatypes {
+	margin: 1em 0;
+}
+
+div.subtype label,
+.metatypes label {
+	margin: 0 1em;
+}
+
+div.subtype label {
+	display: inline-block;
+	width: 20em;
+}
+
+div.subtype input,
+.metatypes input {
+	margin-right: 1ex;
+}
+
+div#contact-table-view .criteria-content input {
+	margin-left: 1em;
+}
+
+div#pfwbged-criterias fieldset {
+	margin: 0;
+}
+
+div#pfwbged-criterias fieldset legend:before {
+	content: "▶  ";
+}
+
+div#pfwbged-criterias fieldset legend.expanded:before {
+	content: "▼  ";
+}
+
+fieldset.text-fieldset label {
+	width: 10em;
+	display: inline-block;
+	margin-bottom: 1ex;
+}
