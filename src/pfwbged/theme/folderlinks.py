@@ -19,21 +19,21 @@ class IFolderLinksPortlet(IPortletDataProvider):
     name = schema.TextLine(
             title=_(u"Title"),
             description=_(u"The title of the navigation tree."),
-            default=u"",
+            default=_(u"Folders"),
             required=False)
 
 
 class Assignment(base.Assignment):
     implements(IFolderLinksPortlet)
     title = _(u'Folder Links')
-    name = u""
+    name = _(u'Folders')
 
 
 class Renderer(base.Renderer):
     render = ViewPageTemplateFile('folderlinks.pt')
 
     def title(self):
-        return self.data.name or ''
+        return self.data.name or _(u'Folders')
 
     @property
     def available(self):
