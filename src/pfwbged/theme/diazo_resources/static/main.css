@@ -12,9 +12,9 @@ div.width-full {
 div#portal-top {
 	background: #1e1f3b url(admin-alpha-header.png) no-repeat right top;
 	margin: 0.5%;
-	border-radius: 1ex;
+	border-radius: 1ex 1ex 0 0;
 	width: 99%;
-	box-shadow: 0px 2px 2px 0px #555;
+	box-shadow: 0 2px 2px black;
 	position: relative;
 }
 
@@ -61,8 +61,9 @@ div#portal-body {
 	clear: both;
 	background: #a2b2b4;
 	background: #3e5975 url(admin-alpha-header.png) no-repeat right -95px;
+	box-shadow: 0 2px 2px black;
 	margin: 0.5%;
-	border-radius: 1ex;
+	border-radius: 0 0 1ex 1ex;
 	width: 99%;
 	position: relative;
 }
@@ -233,7 +234,7 @@ div.table-container table tr.even td {
 	background: #d7d7d7;
 	background: rgba(210, 210, 210, 0.9);
 	border-bottom: none;
-	box-shadow: 0px 2px 2px 0px #555;
+	box-shadow: 0 2px 2px black;
 }
 
 #favorites {
@@ -417,7 +418,7 @@ ul#content-views li a {
 	color: white;
 }
 
-ul#content-views li a:hover {
+ul#content-views li a:hover { /* button */
 	box-shadow: 0px 0px 5px #666;
 }
 
