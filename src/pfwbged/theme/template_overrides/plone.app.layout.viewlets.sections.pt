@@ -7,6 +7,7 @@
         tal:define="selected_tab python:view.selected_portal_tab"
         ><tal:tabs tal:repeat="tab portal_tabs"
         ><li tal:define="tid tab/id"
+        tal:condition="not:context/@@plone_portal_state/anonymous"
              tal:attributes="id string:portaltab-${tid};
                             class python:selected_tab==tid and 'selected' or 'plain'"
             ><a href=""
@@ -15,6 +16,10 @@
                                title tab/description|nothing;">
             Tab Name
             </a></li></tal:tabs>
+    <li class="plain" id="portaltab-index_html"
+        tal:condition="context/@@plone_portal_state/anonymous"><a
+            tal:attributes="href context/@@plone_portal_state/portal_url">Accueil</a></li>
     <li class="plain" id="portaltab-help"><a target="blank"
-            href="http://doc.entrouvert.org/pfwbged.doc/dev/">Aide</a></li></ul>
+            href="http://doc.entrouvert.org/pfwbged.doc/dev/">Aide</a></li>
+    </ul>
 </tal:sections>
