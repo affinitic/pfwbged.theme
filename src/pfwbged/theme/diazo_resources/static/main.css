@@ -226,6 +226,8 @@ div.table-container table tr.even td {
 	text-align: center;
 }
 
+#content ul#extra-columns,
+#content ul#batchsizes,
 #contentActionMenus dl.actionMenu.activated .actionMenuContent,
 #favorites {
 	background: #d7d7d7;
