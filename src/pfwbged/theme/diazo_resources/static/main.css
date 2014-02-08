@@ -713,8 +713,8 @@ div.overlay dl.portletMessage {
 
 body.template-dashboard #edit-bar {
 	position: absolute;
-	right: -10px;
-	top: -45px;
+	right: -5px;
+	top: -75px;
 }
 
 body.template-manage-dashboard #edit-bar li.selected,
