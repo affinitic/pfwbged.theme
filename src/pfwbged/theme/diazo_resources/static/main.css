@@ -660,6 +660,7 @@ div#plone-document-byline {
 }
 
 div#pfwbged-criterias .metatypes,
+div#documents-table-view .criteria-content,
 div#contact-table-view .criteria-content,
 div#contact-table-view .metatypes {
 	margin: 1em 0;
@@ -680,6 +681,7 @@ div.subtype input,
 	margin-right: 1ex;
 }
 
+div#documents-table-view .criteria-content input,
 div#contact-table-view .criteria-content input {
 	margin-left: 1em;
 }
