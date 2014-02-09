@@ -708,7 +708,7 @@ fieldset.text-fieldset label {
 }
 
 div.overlay a.managePortletsFallback,
-div.overlay dl.portletMessage {
+div.overlay dl.portalMessage {
 	display: none;
 }
 
