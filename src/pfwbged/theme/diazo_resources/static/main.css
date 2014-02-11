@@ -690,6 +690,7 @@ div#contact-table-view .criteria-content input {
 }
 
 div#pfwbged-criterias fieldset {
+	cursor: pointer;
 	margin: 0;
 }
 
