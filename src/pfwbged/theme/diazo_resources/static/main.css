@@ -730,3 +730,11 @@ body.template-dashboard #edit-bar li.selected {
 #document-viewlets fieldset table {
 	width: 100%;
 }
+
+#fieldset-versions a.version-link {
+	color: black;
+	cursor: text;
+}
+#fieldset-versions a.version-link:hover {
+	color: black !important;
+}
