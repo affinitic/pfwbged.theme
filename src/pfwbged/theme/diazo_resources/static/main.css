@@ -745,3 +745,7 @@ body.template-dashboard #edit-bar li.selected {
 #dashboard select option[value$='pfwbged.folder.portlet.Navigation'] {
 	display: none;
 }
+
+#content-core form[class$='++add++dmsappendixfile'] ul.formTabs {
+	display: none;
+}
