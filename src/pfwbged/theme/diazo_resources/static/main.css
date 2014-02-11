@@ -746,6 +746,7 @@ body.template-dashboard #edit-bar li.selected {
 	display: none;
 }
 
+#content-core form[class$='adddmsmainfile'] ul.formTabs,
 #content-core form[class$='++add++dmsappendixfile'] ul.formTabs {
 	display: none;
 }
