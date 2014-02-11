@@ -749,3 +749,8 @@ body.template-dashboard #edit-bar li.selected {
 #content-core form[class$='++add++dmsappendixfile'] ul.formTabs {
 	display: none;
 }
+
+input.button-field {
+	padding: 0.5ex 1ex;
+	margin-right: 1em;
+}
