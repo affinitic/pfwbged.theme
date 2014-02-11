@@ -755,3 +755,11 @@ input.button-field {
 	padding: 0.5ex 1ex;
 	margin-right: 1em;
 }
+
+body.portaltype-pfwbgedfolder #content div.documentByLine,
+body.portaltype-folder #content div.documentByLine,
+body.portaltype-dmsthesaurus #content div.documentByLine,
+body.portaltype-dmskeyword #content div.documentByLine,
+body.portaltype-directory #content div.documentByLine {
+	display: none;
+}
