@@ -739,3 +739,9 @@ body.template-dashboard #edit-bar li.selected {
 #fieldset-versions a.version-link:hover {
 	color: black !important;
 }
+
+#dashboard select option[value$='pfwbged.theme.folderlinks.FolderLinks'],
+#dashboard select option[value$='pfwbged.theme.foldernav.Navigation'],
+#dashboard select option[value$='pfwbged.folder.portlet.Navigation'] {
+	display: none;
+}
