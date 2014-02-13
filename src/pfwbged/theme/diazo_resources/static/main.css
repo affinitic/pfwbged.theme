@@ -767,3 +767,8 @@ body.portaltype-directory #content div.documentByLine {
 li#contentview-edit a {
 	margin-bottom: 1ex;
 }
+
+#content table.listing a:hover {
+	color: black !important;
+	text-decoration: underline;
+}
