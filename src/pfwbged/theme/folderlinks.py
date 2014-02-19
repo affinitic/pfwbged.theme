@@ -6,7 +6,6 @@ from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
 from DateTime import DateTime
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from zope.container.interfaces import INameChooser
 
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import base_hasattr
@@ -49,14 +48,10 @@ class Renderer(base.Renderer):
             folder = members_folder[current_user_id]
             folders.append({'title': _('Home Folder'), 'url': folder.absolute_url()})
 
-        chooser = INameChooser(api.portal.get())
         dossiers_folder = getattr(api.portal.get(), 'dossiers')
         for group in api.group.get_groups(user=current_user):
-            group_id = group.id
-            if ' ' in group_id: # sure sign it's from LDAP :/
-                group_id = chooser.chooseName(group.id, api.portal.get())
-            if base_hasattr(dossiers_folder, group_id):
-                folder = dossiers_folder[group_id]
+            if base_hasattr(dossiers_folder, group.id):
+                folder = dossiers_folder[group.id]
                 folders.append({'title': folder.title, 'url': folder.absolute_url()})
 
         return folders
