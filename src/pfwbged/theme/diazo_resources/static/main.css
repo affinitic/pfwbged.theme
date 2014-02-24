@@ -576,6 +576,7 @@ dl.portletFolderLinks dd {
 #portal-body tr.row-state-in-progress td { background: #e38623; }
 #portal-body tr.row-state-refusal-requested td { }
 #portal-body tr.row-state-todo td { background: #de0707; }
+#portal-body tr.row-state-refused td { background: #fe2707; }
 #portal-body tr.row-state-answered td { background: #62ae17; }
 #portal-body tr.row-state-assigning td { background: #de0707; }
 #portal-body tr.row-state-noaction td { background: #aaaaaa; }
