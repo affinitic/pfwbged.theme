@@ -569,36 +569,25 @@ dl.portletFolderLinks dd {
 	margin-top: 0;
 }
 
-#portal-body tr.row-state-published td { background: #b54040; }
-#portal-body tr.row-state-abandoned td { background: #aaaaaa; }
-#portal-body tr.row-state-attributed td { }
-#portal-body tr.row-state-done td { background: #62ae17; }
-#portal-body tr.row-state-in-progress td { background: #e38623; }
-#portal-body tr.row-state-refusal-requested td { }
-#portal-body tr.row-state-todo td { background: #de0707; }
-#portal-body tr.row-state-refused td { background: #fe2707; }
-#portal-body tr.row-state-answered td { background: #62ae17; }
-#portal-body tr.row-state-assigning td { background: #de0707; }
-#portal-body tr.row-state-noaction td { background: #aaaaaa; }
-#portal-body tr.row-state-processing td { background: #ff6600; }
-#portal-body tr.row-state-registering td { }
-#portal-body tr.row-state-ready_to_sent td { }
-#portal-body tr.row-state-sent td { background: #62ae17; }
-#portal-body tr.row-state-writing td { background: #e38623; }
+#portal-body td.colour-column { width: 1px; padding: 0; }
 
-#portal-body tr.row-state-published td a,
-#portal-body tr.row-state-abandoned td a,
-#portal-body tr.row-state-done td a,
-#portal-body tr.row-state-in-progress td a,
-#portal-body tr.row-state-todo td a,
-#portal-body tr.row-state-answered td a,
-#portal-body tr.row-state-assigning td a,
-#portal-body tr.row-state-noaction td a,
-#portal-body tr.row-state-processing td a,
-#portal-body tr.row-state-sent td a,
-#portal-body tr.row-state-writing td a {
-	color: #10171f;
-}
+#portal-body tr.row-state-published td.colour-column { background: #b54040; }
+#portal-body tr.row-state-abandoned td.colour-column { background: #aaaaaa; }
+#portal-body tr.row-state-attributed td.colour-column { }
+#portal-body tr.row-state-done td.colour-column { background: #62ae17; }
+#portal-body tr.row-state-in-progress td.colour-column { background: #e38623; }
+#portal-body tr.row-state-refusal-requested td.colour-column { }
+#portal-body tr.row-state-todo td.colour-column { background: #de0707; }
+#portal-body tr.row-state-refused td.colour-column { background: #fe2707; }
+#portal-body tr.row-state-answered td.colour-column { background: #62ae17; }
+#portal-body tr.row-state-assigning td.colour-column.colour-column { background: #de0707;}
+#portal-body tr.row-state-noaction td.colour-column { background: #aaaaaa; }
+#portal-body tr.row-state-processing td.colour-column { background: #ff6600; }
+#portal-body tr.row-state-registering td.colour-column { }
+#portal-body tr.row-state-ready_to_sent td.colour-column { }
+#portal-body tr.row-state-sent td.colour-column { background: #62ae17; }
+#portal-body tr.row-state-writing td.colour-column { background: #e38623; }
+
 
 #portal-advanced-search {
 	display: block;
