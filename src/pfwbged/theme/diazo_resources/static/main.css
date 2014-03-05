@@ -654,6 +654,7 @@ div#plone-document-byline {
 
 div#pfwbged-criterias .metatypes,
 div#documents-table-view .criteria-content,
+div#folders-table-view .criteria-content,
 div#contact-table-view .criteria-content,
 div#contact-table-view .metatypes {
 	margin: 1em 0;
