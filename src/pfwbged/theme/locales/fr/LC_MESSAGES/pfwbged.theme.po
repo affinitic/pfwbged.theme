@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pfwbged.theme\n"
-"POT-Creation-Date: 2014-02-05 12:12+0000\n"
+"POT-Creation-Date: 2014-03-05 10:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Frederic Peters <fpeters@entrouvert.com>\n"
 "Language-Team: none\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: pfwbged.theme\n"
 
-#: ../folderlinks.py:54
+#: ../folderlinks.py:65
 msgid "Add Folder Links Portlet"
 msgstr "Ajouter portlet de liens vers dossiers"
 
@@ -22,7 +22,11 @@ msgstr "Ajouter portlet de liens vers dossiers"
 msgid "Add Folder Navigation Portlet"
 msgstr "Ajouter portlet de navigation entre dossiers"
 
-#: ../folderlinks.py:63
+#: ../folderlinks.py:52
+msgid "All Folders"
+msgstr "Tous les dossiers"
+
+#: ../folderlinks.py:74
 msgid "Edit Folder Links Portlet"
 msgstr "Modifier portlet de liens vers dossiers"
 
@@ -30,11 +34,15 @@ msgstr "Modifier portlet de liens vers dossiers"
 msgid "Edit Folder Navigation Portlet"
 msgstr "Modifier porlet de navigation entre dossiers"
 
-#: ../folderlinks.py:24
+#: ../folderlinks.py:28
 msgid "Folder Links"
 msgstr "Liens des dossiers"
 
-#: ../folderlinks.py:41
+#: ../folderlinks.py:22
+msgid "Folders"
+msgstr "Dossiers"
+
+#: ../folderlinks.py:49
 msgid "Home Folder"
 msgstr "Dossier personnel"
 
@@ -42,6 +50,7 @@ msgstr "Dossier personnel"
 msgid "Navigation"
 msgstr "Navigation"
 
+#: ../folderlinks.py:21
 #: ../foldernav.py:37
 msgid "The title of the navigation tree."
 msgstr "Le titre de l'arbre de navigation."
@@ -50,11 +59,11 @@ msgstr "Le titre de l'arbre de navigation."
 msgid "This portlet display a navigation tree."
 msgstr "Ce portlet affiche un arbre de navigation."
 
-#: ../folderlinks.py:55
+#: ../folderlinks.py:66
 msgid "This portlet display links to main folders"
 msgstr "Ce portlet affiche des liens vers les dossiers principaux."
 
+#: ../folderlinks.py:20
 #: ../foldernav.py:36
 msgid "Title"
 msgstr "Titre"
-
