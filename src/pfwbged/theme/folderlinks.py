@@ -48,6 +48,9 @@ class Renderer(base.Renderer):
             folder = members_folder[current_user_id]
             folders.append({'title': _('Home Folder'), 'url': folder.absolute_url()})
 
+        folder = getattr(api.portal.get(), 'dossiers')
+        folders.append({'title': _('All Folders'), 'url': folder.absolute_url()})
+
         dossiers_folder = getattr(api.portal.get(), 'dossiers')
         for group in api.group.get_groups(user=current_user):
             if base_hasattr(dossiers_folder, group.id):
