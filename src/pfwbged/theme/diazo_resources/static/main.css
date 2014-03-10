@@ -763,3 +763,7 @@ li#contentview-edit a {
 	color: black !important;
 	text-decoration: underline;
 }
+
+div.pb-ajax form textarea#form-widgets-note {
+	height: 12em;
+}
