@@ -16,11 +16,7 @@ from . import _
 
 
 class IFolderLinksPortlet(IPortletDataProvider):
-    name = schema.TextLine(
-            title=_(u"Title"),
-            description=_(u"The title of the navigation tree."),
-            default=_(u"Shortcuts"),
-            required=False)
+    pass
 
 
 class Assignment(base.Assignment):
@@ -33,7 +29,7 @@ class Renderer(base.Renderer):
     render = ViewPageTemplateFile('folderlinks.pt')
 
     def title(self):
-        return self.data.name or _(u'Shortcuts')
+        return _(u'Shortcuts')
 
     @property
     def available(self):
