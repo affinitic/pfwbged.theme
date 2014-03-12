@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pfwbged.theme\n"
-"POT-Creation-Date: 2014-03-05 10:10+0000\n"
+"POT-Creation-Date: 2014-03-12 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Frederic Peters <fpeters@entrouvert.com>\n"
 "Language-Team: none\n"
@@ -38,7 +38,7 @@ msgstr "Modifier porlet de navigation entre dossiers"
 msgid "Folder Links"
 msgstr "Liens des dossiers"
 
-#: ../folderlinks.py:22
+#: ../folderlinks.py:29
 msgid "Folders"
 msgstr "Dossiers"
 
@@ -49,6 +49,10 @@ msgstr "Dossier personnel"
 #: ../foldernav.py:45
 msgid "Navigation"
 msgstr "Navigation"
+
+#: ../folderlinks.py:22
+msgid "Shortcuts"
+msgstr "Raccourcis"
 
 #: ../folderlinks.py:21
 #: ../foldernav.py:37
@@ -67,3 +71,4 @@ msgstr "Ce portlet affiche des liens vers les dossiers principaux."
 #: ../foldernav.py:36
 msgid "Title"
 msgstr "Titre"
+
