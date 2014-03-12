@@ -110,6 +110,7 @@ div#portal-columns .documentFirstHeading {
 
 #portal-body-top {
 	padding-left: 1em;
+	margin-bottom: 1ex;
 }
 
 div#edit-bar {
@@ -708,7 +709,7 @@ div.overlay dl.portalMessage {
 body.template-dashboard #edit-bar {
 	position: absolute;
 	right: -5px;
-	top: -75px;
+	top: -50px;
 }
 
 body.template-manage-dashboard #edit-bar li.selected,
