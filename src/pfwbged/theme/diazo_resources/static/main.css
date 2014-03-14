@@ -770,6 +770,6 @@ div.pb-ajax form textarea#form-widgets-note {
 	height: 12em;
 }
 
-div.pb-ajax #formfield-form-widgets-IPfwbDocument-keywords {
+div.pb-ajax #formfield-form-widgets-IPfwbDocument-keywords a {
 	display: none;
 }
