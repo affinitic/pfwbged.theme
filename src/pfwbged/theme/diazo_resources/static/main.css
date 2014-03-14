@@ -769,3 +769,7 @@ li#contentview-edit a {
 div.pb-ajax form textarea#form-widgets-note {
 	height: 12em;
 }
+
+div.pb-ajax #formfield-form-widgets-IPfwbDocument-keywords {
+	display: none;
+}
