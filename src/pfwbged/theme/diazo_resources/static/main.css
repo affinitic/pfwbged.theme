@@ -778,3 +778,11 @@ div.pb-ajax #formfield-form-widgets-IPfwbDocument-keywords label {
 div.pb-ajax #formfield-form-widgets-IPfwbDocument-keywords a {
 	display: none;
 }
+
+
+tr.row-state-finished a[href$="/@@external_edit"],
+tr.row-state-finished a[href$="/delete_confirmation"],
+tr.row-state-finished a[href$="/edit"] {
+	visibility: hidden;
+}
+
