@@ -505,6 +505,10 @@ dl#plone-contentmenu-display {
 	display: none;
 }
 
+div#fields {
+	max-width: 48%;
+}
+
 #fieldset-versions {
 	margin-top: -10em;
 }
