@@ -790,3 +790,6 @@ tr.row-state-finished a[href$="/edit"] {
 	visibility: hidden;
 }
 
+.portaltype-pfwbgedcollection #formfield-form-widgets-review_state {
+	display: none;
+}
