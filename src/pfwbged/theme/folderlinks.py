@@ -26,6 +26,8 @@ class Assignment(base.Assignment):
 
 
 class Renderer(base.Renderer):
+    '''Portlet with common folders (home, all, services)'''
+
     render = ViewPageTemplateFile('folderlinks.pt')
 
     def title(self):
