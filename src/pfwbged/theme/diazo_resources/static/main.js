@@ -30,4 +30,10 @@ $(function() {
       return false;
     };
   });
+  $('.actionicon-object_buttons-create_signed_version span').click(function() {
+    if (confirm("Vraiment créer la version signée ?\n(cette action est définitive)") == true) {
+      return true; /* this will let the event flow the <a> below */
+    }
+    return false;
+  });
 });
