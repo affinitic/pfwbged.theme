@@ -487,6 +487,8 @@ div.contentActions {
 
 #contentActionMenus dd.actionMenuContent li a.no-icon span {
 	padding-left: 19px;
+	width: 90%;
+	display: inline-block;
 }
 
 #contentActionMenus a.first-action,

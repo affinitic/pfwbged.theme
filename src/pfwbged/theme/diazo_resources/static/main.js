@@ -36,4 +36,10 @@ $(function() {
     }
     return false;
   });
+  $('.version-action-finish_without_validation span').click(function() {
+    if (confirm("Vraiment valider et finaliser la version ?\n(cette action est définitive)") == true) {
+      return true; /* this will let the event flow the <a> below */
+    }
+    return false;
+  });
 });
