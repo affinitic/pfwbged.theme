@@ -796,6 +796,26 @@ tr.row-state-finished a[href$="/edit"] {
 	display: none;
 }
 
+#folder-metadata {
+        width: 48%;
+        float: left;
+}
+
+#folder-filed {
+        width: 48%;
+        float: right;
+}
+
+#folder-filed table {
+        width: 100%;
+}
+
+#searchresults .loading {
+        padding: 1em 0;
+        color: #666;
+        display: block;
+}
+
 @media print {
 	div.position-0 {
 		margin-left: 1%;
