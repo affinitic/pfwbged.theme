@@ -42,4 +42,17 @@ $(function() {
     }
     return false;
   });
+  $('.ResultsTasksTable tr a').hover(function() {
+     $('#preview-doc').remove();
+     $.getJSON($(this).attr('href') + '/@@preview',
+        function (data) {
+           $('#preview-doc').remove();
+           if (data.thumbnail_url) {
+             $('body').append('<div id="preview-doc">');
+             $('#preview-doc').append('<img src="' + data.thumbnail_url + '"/>');
+           }
+     });
+  }, function() {
+     $('#preview-doc').remove();
+  });
 });

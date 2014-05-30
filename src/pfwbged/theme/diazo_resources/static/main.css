@@ -831,3 +831,17 @@ tr.row-state-finished a[href$="/edit"] {
 		box-shadow: none;
 	}
 }
+
+#preview-doc {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	width: 30%;
+	z-index: 54321;
+	box-shadow: 0 2px 2px black;
+	background: white;
+}
+
+#preview-doc img {
+	width: 100%;
+}
