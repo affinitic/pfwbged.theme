@@ -785,6 +785,9 @@ div.pb-ajax #formfield-form-widgets-IPfwbDocument-keywords a {
 	display: none;
 }
 
+div.discussion div.commentActions input.destructive {
+	display: none;
+}
 
 tr.row-state-finished a[href$="/@@external_edit"],
 tr.row-state-finished a[href$="/delete_confirmation"],
