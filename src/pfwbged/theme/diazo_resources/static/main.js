@@ -42,17 +42,21 @@ $(function() {
     }
     return false;
   });
-  $('.ResultsTasksTable tr a').hover(function() {
+  var xhr_preview = null;
+  $('.ResultsTasksTable tr a, .ResultsTable tr a').hover(function() {
      $('#preview-doc').remove();
-     $.getJSON($(this).attr('href') + '/@@preview',
+     xhr_preview = $.getJSON($(this).attr('href') + '/@@preview',
         function (data) {
+           xhr_preview = null;
            $('#preview-doc').remove();
+           if (xhr_preview !== null) xhr_preview.abort();
            if (data.thumbnail_url) {
              $('body').append('<div id="preview-doc">');
              $('#preview-doc').append('<img src="' + data.thumbnail_url + '"/>');
            }
      });
   }, function() {
+     if (xhr_preview !== null) xhr_preview.abort();
      $('#preview-doc').remove();
   });
 });
