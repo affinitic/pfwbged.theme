@@ -3,6 +3,49 @@
 /*jslint white:false, onevar:true, undef:true, nomen:true, eqeqeq:true, plusplus:true, bitwise:true, regexp:true, newcap:true, immed:true, strict:false, browser:true */
 /*global jQuery:false, document:false, window:false, location:false */
 
+(function ($) {
+
+  /* define pfwbged namespace if it doesn't exist */
+  if (typeof($.pfwbged) === "undefined") {
+      $.pfwbged = { };
+  }
+
+  $.pfwbged.prepareLinearNavigation = function () {
+    /* prepare for linear navigation from document page to document page */
+    var doc_links = $('.ResultsTasksTable tr a, .ResultsTable tr a').map(
+                  function(a, b) { return $(b).attr('href'); });
+    if (doc_links.length > 0) {
+      window.localStorage.setItem('table-documents', JSON.stringify($.makeArray(doc_links)));
+      window.localStorage.setItem('table-documents-url', window.location.href);
+    }
+  };
+
+  $.pfwbged.doLinearNavigation = function () {
+    var doc_links = JSON.parse(localStorage.getItem('table-documents'));
+    var table_url = window.localStorage.getItem('table-documents-url');
+    if (typeof(doc_links) != 'object') return;
+    var idx = doc_links.indexOf(window.location.href);
+    if (idx == -1) return;
+    if (idx < doc_links.length-1) {
+      /* append a "next" link */
+      var url = doc_links[idx+1];
+      $('#contentview-edit').after('<li id="contentview-next" class="plain">' +
+                      '<a href="' + url + '">Suivant</a></li>');
+    }
+    if (idx > 0) {
+      /* append a "previous" link */
+      var url = doc_links[idx-1];
+      $('#contentview-edit').after('<li id="contentview-prev" class="plain">' +
+                      '<a href="' + url + '">Précédent</a></li>');
+    }
+    if (table_url) {
+      $('#contentview-edit').after('<li id="contentview-table" class="plain">' +
+                      '<a href="' + table_url + '">Tableau</a></li>');
+    }
+  };
+
+}(jQuery));
+
 /* watch version being selected, so menu entries can be shown/hidden */
 $('#contentActionMenus .version-action').closest('li').hide();
 $('.version-link').closest('tr').on('select-version', function() {
@@ -59,4 +102,8 @@ $(function() {
      if (xhr_preview !== null) xhr_preview.abort();
      $('#preview-doc').remove();
   });
+
+  $.pfwbged.prepareLinearNavigation();
+  $.pfwbged.doLinearNavigation();
+
 });
