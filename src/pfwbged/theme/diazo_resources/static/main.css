@@ -852,3 +852,8 @@ tr.row-state-finished a[href$="/edit"] {
 #preview-doc img {
 	width: 100%;
 }
+
+.multipleSelectionWidget .widgetPulldownMenu {
+	height: 25em;
+	width: 298px;
+}
