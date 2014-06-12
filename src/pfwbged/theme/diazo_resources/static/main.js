@@ -26,21 +26,21 @@
     if (typeof(doc_links) != 'object') return;
     var idx = doc_links.indexOf(window.location.href);
     if (idx == -1) return;
-    if (idx < doc_links.length-1) {
-      /* append a "next" link */
-      var url = doc_links[idx+1];
-      $('#contentview-edit').after('<li id="contentview-next" class="plain">' +
-                      '<a href="' + url + '">Suivant</a></li>');
-    }
     if (idx > 0) {
       /* append a "previous" link */
       var url = doc_links[idx-1];
-      $('#contentview-edit').after('<li id="contentview-prev" class="plain">' +
+      $('#content-views').append('<li id="contentview-prev" class="plain">' +
                       '<a href="' + url + '">Précédent</a></li>');
     }
     if (table_url) {
-      $('#contentview-edit').after('<li id="contentview-table" class="plain">' +
+      $('#content-views').append('<li id="contentview-table" class="plain">' +
                       '<a href="' + table_url + '">Tableau</a></li>');
+    }
+    if (idx < doc_links.length-1) {
+      /* append a "next" link */
+      var url = doc_links[idx+1];
+      $('#content-views').append('<li id="contentview-next" class="plain">' +
+                      '<a href="' + url + '">Suivant</a></li>');
     }
   };
 
