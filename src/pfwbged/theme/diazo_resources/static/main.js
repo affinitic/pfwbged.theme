@@ -15,6 +15,16 @@
     var doc_links = $('.ResultsTasksTable tr a, .ResultsTable tr a').map(
                   function(a, b) { return $(b).attr('href'); });
     if (doc_links.length > 0) {
+      /* remove duplicated items */
+      var doc_links_uniq = Array();
+      for (i=0, len=doc_links.length; i < len; ++i) {
+        var val = doc_links[i];
+        if (doc_links_uniq.indexOf(val) == -1) {
+           doc_links_uniq.push(val);
+        }
+      }
+      doc_links = doc_links_uniq;
+      /* write the variables to local storage */
       window.localStorage.setItem('table-documents', JSON.stringify($.makeArray(doc_links)));
       window.localStorage.setItem('table-documents-url', window.location.href);
     }
