@@ -42,10 +42,6 @@
       $('#content-views').append('<li id="contentview-prev" class="plain">' +
                       '<a href="' + url + '">Précédent</a></li>');
     }
-    if (table_url) {
-      $('#content-views').append('<li id="contentview-table" class="plain">' +
-                      '<a href="' + table_url + '">Tableau</a></li>');
-    }
     if (idx < doc_links.length-1) {
       /* append a "next" link */
       var url = doc_links[idx+1];
