@@ -12,7 +12,7 @@
 
   $.pfwbged.prepareLinearNavigation = function () {
     /* prepare for linear navigation from document page to document page */
-    var doc_links = $('.ResultsTasksTable tr a, .ResultsTable tr a').map(
+    var doc_links = $('table.listing:first').parent('.ResultsTasksTable, .ResultsTable').find('tr a').map(
                   function(a, b) { return $(b).attr('href'); });
     if (doc_links.length > 0) {
       /* remove duplicated items */
