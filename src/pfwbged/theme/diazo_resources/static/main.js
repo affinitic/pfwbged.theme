@@ -50,6 +50,11 @@
     }
   };
 
+  $(document).on('form-submit-validate', function(e, data, form) {
+    /* before the form gets submitted to the server, we disable form buttons */
+    $(form).find('.button-field').prop('disabled', 'disabled');
+  });
+
 }(jQuery));
 
 /* watch version being selected, so menu entries can be shown/hidden */
