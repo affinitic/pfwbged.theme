@@ -857,3 +857,15 @@ tr.row-state-finished a[href$="/edit"] {
 	height: 25em;
 	width: 298px;
 }
+
+.queryoperator {
+	width: 150px;
+}
+
+.querywidget {
+	width: auto;
+}
+
+.dateRangeWidget input {
+	width: 6em;
+}
