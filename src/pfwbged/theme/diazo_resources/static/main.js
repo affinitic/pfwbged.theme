@@ -14,12 +14,24 @@
     /* prepare for linear navigation from document page to document page */
     var doc_links = $('table.listing:first').parent('.ResultsTasksTable, .ResultsTable').find('tr a').map(
                   function(a, b) { return $(b).attr('href'); });
+    var doc_tables = $('table.listing');
+    var i=0;
+    for (i; i<doc_tables.length; i++) {
+      var doc_table = doc_tables[i];
+      var links = $(doc_table).parent('.ResultsTasksTable, .ResultsTable').find('tr a').map(
+              function(a, b) { return $(b).attr('href'); });
+      if (links.length > 0) {
+        doc_links.push.apply(doc_links, links);
+        doc_links.push(null);
+      }
+    }
+
     if (doc_links.length > 0) {
       /* remove duplicated items */
       var doc_links_uniq = Array();
       for (i=0, len=doc_links.length; i < len; ++i) {
         var val = doc_links[i];
-        if (doc_links_uniq.indexOf(val) == -1) {
+        if (doc_links_uniq.indexOf(val) == -1 || val === null) {
            doc_links_uniq.push(val);
         }
       }
@@ -36,13 +48,13 @@
     if (typeof(doc_links) != 'object') return;
     var idx = doc_links.indexOf(window.location.href);
     if (idx == -1) return;
-    if (idx > 0) {
+    if (idx > 0 && doc_links[idx-1] !== null) {
       /* append a "previous" link */
       var url = doc_links[idx-1];
       $('#content-views').append('<li id="contentview-prev" class="plain">' +
                       '<a href="' + url + '">Précédent</a></li>');
     }
-    if (idx < doc_links.length-1) {
+    if (idx < doc_links.length-1 && doc_links[idx+1] !== null) {
       /* append a "next" link */
       var url = doc_links[idx+1];
       $('#content-views').append('<li id="contentview-next" class="plain">' +
