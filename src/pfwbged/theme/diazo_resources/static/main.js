@@ -67,6 +67,8 @@
     $(form).find('.button-field').prop('disabled', 'disabled');
   });
 
+  $('.target-new-tab').attr('target', '_blank');
+
 }(jQuery));
 
 /* watch version being selected, so menu entries can be shown/hidden */
