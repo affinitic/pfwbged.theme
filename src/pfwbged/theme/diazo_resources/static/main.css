@@ -869,3 +869,9 @@ tr.row-state-finished a[href$="/edit"] {
 .dateRangeWidget input {
 	width: 6em;
 }
+
+.section-Members.template-view.portaltype-pfwbgedfolder #plone-contentmenu-actions-delete,
+.section-Members.template-view.portaltype-pfwbgedfolder #plone-contentmenu-actions-delete span {
+	display: none;
+	visibility: hidden;
+}
