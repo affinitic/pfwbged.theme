@@ -45,6 +45,7 @@
   $.pfwbged.doLinearNavigation = function () {
     var doc_links = JSON.parse(localStorage.getItem('table-documents'));
     var table_url = window.localStorage.getItem('table-documents-url');
+    if (doc_links == null) return;
     if (typeof(doc_links) != 'object') return;
     var idx = doc_links.indexOf(window.location.href);
     if (idx == -1) return;
