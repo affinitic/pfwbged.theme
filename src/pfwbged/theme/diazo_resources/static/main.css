@@ -897,3 +897,7 @@ table.listing td.icon-column {
 	padding: 0.5em 1em;
 	border-bottom: 0 !important;
 }
+
+#content table.listing td.title-column a {
+	display: block;
+}
