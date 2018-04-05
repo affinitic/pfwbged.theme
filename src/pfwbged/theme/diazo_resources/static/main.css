@@ -913,3 +913,12 @@ table.listing td.icon-column {
 #content table.listing td.title-column a {
 	display: block;
 }
+
+#portal-searchbox {
+	font-size: 100%;
+}
+
+#portal-searchbox input {
+	padding: 5px;
+	border: 1px solid #666;
+}
