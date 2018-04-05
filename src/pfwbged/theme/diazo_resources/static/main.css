@@ -517,6 +517,9 @@ div#fields {
 
 #fieldset-versions {
 	margin-top: -10em;
+	float: right;
+	width: 50%;
+	min-width: 45em;
 }
 
 #fieldset-versions table.listing {
