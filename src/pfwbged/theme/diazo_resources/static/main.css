@@ -522,6 +522,15 @@ div#fields {
 	min-width: 45em;
 }
 
+@media screen and (max-width: 800px) {
+	#fieldset-versions {
+		float: none;
+		width: auto;
+		min-width: auto;
+		margin-top: 0;
+	}
+}
+
 #fieldset-versions table.listing {
 	width: 100%;
 }
