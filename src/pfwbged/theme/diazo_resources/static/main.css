@@ -887,3 +887,13 @@ tr.row-state-finished a[href$="/edit"] {
 	display: none;
 	visibility: hidden;
 }
+
+table.listing td.icon-column {
+	padding: 0;
+}
+
+#content table.listing td.icon-column a {
+	display: block;
+	padding: 0.5em 1em;
+	border-bottom: 0 !important;
+}
