@@ -271,16 +271,16 @@ div.table-container table tr.even td {
 
 #content .actions a {
 	display: inline-block;
-	width: 16px;
+	width: 24px;
 	text-indent: -11110px;
 	text-decoration: none;
 	border: 0;
 }
 
-.actions a.plus { background: url(list-add-symbolic.png) top left no-repeat; }
-.actions a.gear { background: url(system-run-symbolic.png) top left no-repeat; }
-.actions a.list { background: url(view-list-symbolic.png) top left no-repeat; }
-.actions a.columns { background: url(view-columns-symbolic.png) top left no-repeat; }
+.actions a.plus { background: url(list-add-symbolic.png) top center no-repeat; }
+.actions a.gear { background: url(system-run-symbolic.png) top center no-repeat; }
+.actions a.list { background: url(view-list-symbolic.png) top center no-repeat; }
+.actions a.columns { background: url(view-columns-symbolic.png) top center no-repeat; }
 
 ul#extra-columns label {
 	font-weight: normal;
