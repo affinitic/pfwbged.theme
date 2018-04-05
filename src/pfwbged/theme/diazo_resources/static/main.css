@@ -429,6 +429,7 @@ ul#content-views li a:hover,
 ul#content-views li a {
 	background-color: #1e2d3a;
 	border-radius: 5px;
+	padding: 5px 0.75em;
 	color: white;
 }
 
@@ -496,7 +497,8 @@ div.contentActions {
 }
 
 #plone-contentmenu-workflow dt.actionMenuHeader a {
-	width: 16px;
+	width: 32px;
+	height: 40px;
 	text-indent: -11110px;
 	background: url(system-run-symbolic.png) center center no-repeat;
 }
