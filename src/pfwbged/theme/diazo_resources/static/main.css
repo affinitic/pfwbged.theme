@@ -11,9 +11,7 @@ div.width-full {
 
 div#portal-top {
 	background: #1e1f3b url(admin-alpha-header.png) no-repeat right top;
-	margin: 0.5% 0.5% 4px 0.5%;
-	border-radius: 1ex 1ex 0 0;
-	width: 99%;
+	margin: 0 0 0 0;
 	box-shadow: 0 2px 2px black;
 	position: relative;
 }
@@ -62,9 +60,8 @@ div#portal-body {
 	background: #a2b2b4;
 	background: #3e5975 url(admin-alpha-header.png) no-repeat right -95px;
 	box-shadow: 0 2px 2px black;
-	margin: 0 0.5% 0.5% 0.5%;
+	margin: 0 0 0.5% 0;
 	border-radius: 0 0 1ex 1ex;
-	width: 99%;
 	position: relative;
 }
 
@@ -231,7 +228,7 @@ div.table-container table tr.even td {
 #portal-down a.open {
 	background-color: #1e2d3a;
 	color: #e8e8e7;
-	border-radius: 5px;
+	border-radius: 0 0 0 5px;
 	display: inline-block;
 	width: 32px;
 	padding: 3px 0px;
