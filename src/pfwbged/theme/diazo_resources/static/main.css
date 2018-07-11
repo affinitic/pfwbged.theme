@@ -139,6 +139,7 @@ div.table {
 }
 
 #content div.table div.table-top,
+div.multi-actions,
 #content div.table p {
 	margin: 0 0;
 	padding: 5px 1ex;
@@ -611,24 +612,39 @@ dl.portletFolderLinks dd {
 	margin-top: 0;
 }
 
-#portal-body td.colour-column { width: 1px; padding: 0; }
+#content .portletItem table {
+	margin-bottom: 0;
+}
 
-#portal-body tr.row-state-published td.colour-column { background: #b54040; }
-#portal-body tr.row-state-abandoned td.colour-column { background: #aaaaaa; }
+#portal-body table.listing th,
+#portal-body table.listing td {
+	vertical-align: middle;
+}
+
+#portal-body th span.colour-column-head { display: block; width: 2rem; height: 2rem; padding: 0; }
+#portal-body td.colour-column { width: 1ex; height: 1ex; padding: 0; }
+#portal-body td.colour-column label { padding: 0.8rem; display: block; }
+#portal-body td.colour-column input { }
+
+#portal-body tr.row-state-published td.colour-column { background: #b54040 !important; }
+#portal-body tr.row-state-abandoned td.colour-column { background: #aaaaaa !important; }
 #portal-body tr.row-state-attributed td.colour-column { }
-#portal-body tr.row-state-done td.colour-column { background: #62ae17; }
-#portal-body tr.row-state-in-progress td.colour-column { background: #e38623; }
+#portal-body tr.row-state-done td.colour-column { background: #62ae17 !important; }
+#portal-body tr.row-state-in-progress td.colour-column { background: #e38623 !important; }
 #portal-body tr.row-state-refusal-requested td.colour-column { }
-#portal-body tr.row-state-todo td.colour-column { background: #de0707; }
-#portal-body tr.row-state-refused td.colour-column { background: #fe2707; }
-#portal-body tr.row-state-answered td.colour-column { background: #62ae17; }
+#portal-body tr.row-state-todo td.colour-column { background: #de0707 !important; }
+#portal-body tr.row-state-refused td.colour-column { background: #fe2707 !important; }
+#portal-body tr.row-state-answered td.colour-column { background: #62ae17 !important; }
 #portal-body tr.row-state-assigning td.colour-column.colour-column { background: #de0707;}
-#portal-body tr.row-state-noaction td.colour-column { background: #aaaaaa; }
-#portal-body tr.row-state-processing td.colour-column { background: #ff6600; }
+#portal-body tr.row-state-noaction td.colour-column { background: #aaaaaa !important; }
+#portal-body tr.row-state-processing td.colour-column { background: #ff6600 !important; }
 #portal-body tr.row-state-registering td.colour-column { }
 #portal-body tr.row-state-ready_to_sent td.colour-column { }
-#portal-body tr.row-state-sent td.colour-column { background: #62ae17; }
-#portal-body tr.row-state-writing td.colour-column { background: #e38623; }
+#portal-body tr.row-state-sent td.colour-column { background: #62ae17 !important; }
+#portal-body tr.row-state-writing td.colour-column { background: #e38623 !important; }
+
+#portal-body tr.selected td { background: #bbb; }
+#portal-body tr.selected:hover td { background: #bbb; }
 
 
 #portal-advanced-search {
@@ -927,4 +943,19 @@ table.listing td.icon-column {
 #portal-searchbox input {
 	padding: 5px;
 	border: 1px solid #666;
+}
+
+div.multi-actions button {
+	display: none;
+}
+
+#portal-body div.ResultsOpinionsTable table th span.colour-column-head,
+#portal-body div.ResultsOpinionsTable table td.colour-column label,
+div#document-viewlets table th span.colour-column-head,
+div#document-viewlets table td.colour-column label {
+	display: none;
+}
+
+#portal-body div table tr.row-state-done td.colour-column label {
+	display: none;
 }
