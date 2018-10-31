@@ -524,6 +524,7 @@ dl#plone-contentmenu-display {
 
 div#fields {
 	max-width: 48%;
+	max-width: calc(100% - 45em);
 }
 
 #fieldset-versions {
@@ -537,8 +538,11 @@ div#fields {
 	#fieldset-versions {
 		float: none;
 		width: auto;
-		min-width: auto;
+		min-width: none;
 		margin-top: 0;
+	}
+	div#fields {
+		max-width: none;
 	}
 }
 
