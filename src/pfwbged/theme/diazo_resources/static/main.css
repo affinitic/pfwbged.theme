@@ -523,15 +523,13 @@ dl#plone-contentmenu-display {
 }
 
 div#fields {
-	max-width: 48%;
-	max-width: calc(100% - 45em);
+	width: calc(98% - 700px);
 }
 
 #fieldset-versions {
 	margin-top: -10em;
 	float: right;
-	width: 50%;
-	min-width: 45em;
+	width: 700px;
 }
 
 @media screen and (max-width: 800px) {
