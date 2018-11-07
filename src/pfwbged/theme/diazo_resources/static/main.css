@@ -947,6 +947,7 @@ table.listing td.icon-column {
 
 div.multi-actions button {
 	display: none;
+	padding: 1ex;
 }
 
 #portal-body div.ResultsOpinionsTable table th span.colour-column-head,
