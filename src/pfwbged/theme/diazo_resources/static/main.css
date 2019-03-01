@@ -633,7 +633,8 @@ dl.portletFolderLinks dd {
 #portal-body tr.row-state-in-progress td.colour-column { background: #e38623 !important; }
 #portal-body tr.row-state-refusal-requested td.colour-column { }
 #portal-body tr.row-state-todo td.colour-column { background: #de0707 !important; }
-#portal-body tr.row-state-refused td.colour-column { background: #fe2707 !important; }
+/* versions fieldset also has refused rows, but must not be colored */
+#portal-body #document-viewlets tr.row-state-refused td.colour-column { background: #fe2707 !important; }
 #portal-body tr.row-state-answered td.colour-column { background: #62ae17 !important; }
 #portal-body tr.row-state-assigning td.colour-column.colour-column { background: #de0707;}
 #portal-body tr.row-state-noaction td.colour-column { background: #aaaaaa !important; }
