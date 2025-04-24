@@ -20,6 +20,6 @@
         tal:condition="context/@@plone_portal_state/anonymous"><a
             tal:attributes="href context/@@plone_portal_state/portal_url">Accueil</a></li>
     <li class="plain" id="portaltab-help"><a target="blank"
-            href="https://www.pfwb.be/divers/help/">Aide</a></li>
+            href="https://ged.pfwb.be/help/">Aide</a></li>
     </ul>
 </tal:sections>
